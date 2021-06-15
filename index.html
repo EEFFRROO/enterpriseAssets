@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Активы предприятия</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <script src="js/Server.js"></script>
+</head>
+<body>
+    <button class="btnShowAssets">Показать активы предприятия</button>
+    <div class="backgroundOfAddForm"></div>
+    <div class="addForm addMonetaryAssetForm" style="display: none;">
+        <h3 class="titleForm">Добавление денежного актива</h3><br>
+        <input type="text" placeholder="Количество" class="amountInput">
+        <input type="text" placeholder="Имя Банка" class="bankNameInput">
+        <input type="text" placeholder="Номер Аккаунта" class="accountNumberInput">
+        <input type="text" placeholder="Номинал" class="monetaryDenominationInput"><br>
+        <button class="addFormBtn confirmBtn">Принять</button>
+        <button class="addFormBtn cancelBtn">Отмена</button>
+    </div>
+    <div class="addForm addNonMonetaryAssetForm" style="display: none;">
+        <h3 class="titleForm">Добавление неденежного актива</h3><br>
+        <input type="text" placeholder="Название" class="nameInput">
+        <input type="text" placeholder="Начальная стоимость" class="balanceValueInput">
+        <input type="text" placeholder="Остаточная стоимость" class="residualValueInput">
+        <input type="text" placeholder="Оценочная стоимость" class="assessedValueInput"><br>
+        <input type="text" placeholder="Год создания" class="creationDateInput">
+        <input type="text" placeholder="Мера" class="measureInput">
+        <input type="text" placeholder="Номинал" class="nonMonetaryDenominationInput">
+        <input type="text" placeholder="Доп. информация" class="additionalInfoInput"><br>
+        <button class="addFormBtn confirmBtn">Принять</button>
+        <button class="addFormBtn cancelBtn">Отмена</button>
+    </div>
+</body>
+</html>
